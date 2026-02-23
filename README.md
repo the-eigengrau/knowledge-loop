@@ -1,4 +1,4 @@
-# Knowledge Bot
+# Knowledge Loop
 
 A Slack bot that answers your team's questions using Notion FAQ pages, powered by Claude. When it doesn't know the answer, it tags the right people — then learns from their responses so it knows next time.
 
