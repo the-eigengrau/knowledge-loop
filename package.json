@@ -1,0 +1,19 @@
+{
+  "name": "knowledge-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node test/smoke.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.71.2",
+    "@notionhq/client": "^5.8.0",
+    "@slack/bolt": "^3.15.0",
+    "dotenv": "^16.4.5"
+  }
+}

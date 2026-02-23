@@ -1,0 +1,16 @@
+{
+  "botName": "Knowledge Bot",
+  "slashCommand": "/kbot",
+  "watchChannels": [],
+  "showEvidence": false,
+  "generalFaq": {
+    "enabled": false,
+    "notionPageUrl": "",
+    "kbRootPageUrl": "",
+    "adminUserIds": []
+  },
+  "features": {
+    "autoDiscovery": true,
+    "faqCorrection": true
+  }
+}

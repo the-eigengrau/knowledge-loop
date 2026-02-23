@@ -1,0 +1,59 @@
+{
+  "display_information": {
+    "name": "Knowledge Bot",
+    "description": "Answers questions from internal FAQs and routes to subject-matter experts.",
+    "background_color": "#4A154B"
+  },
+  "features": {
+    "bot_user": {
+      "display_name": "Knowledge Bot",
+      "always_online": true
+    },
+    "slash_commands": [
+      {
+        "command": "/kbot",
+        "description": "Manage knowledge areas and FAQ configurations",
+        "usage_hint": "[list | add | remove | set-owners | help]",
+        "should_escape": false
+      }
+    ],
+    "app_home": {
+      "home_tab_enabled": true,
+      "messages_tab_enabled": true,
+      "messages_tab_read_only_enabled": false
+    }
+  },
+  "oauth_config": {
+    "scopes": {
+      "bot": [
+        "chat:write",
+        "channels:history",
+        "groups:history",
+        "channels:read",
+        "groups:read",
+        "users:read",
+        "users:read.email",
+        "commands",
+        "im:history",
+        "im:read",
+        "im:write"
+      ]
+    }
+  },
+  "settings": {
+    "socket_mode_enabled": true,
+    "event_subscriptions": {
+      "bot_events": [
+        "message.channels",
+        "message.groups",
+        "message.im",
+        "app_home_opened"
+      ]
+    },
+    "interactivity": {
+      "is_enabled": true
+    },
+    "org_deploy_enabled": false,
+    "token_rotation_enabled": false
+  }
+}
